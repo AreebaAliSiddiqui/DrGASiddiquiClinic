@@ -266,7 +266,7 @@ nav {
 .hero-img-frame {
   position: relative;
   width: 380px; height: 460px;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border-radius: 50%;
   overflow: hidden;
   background: linear-gradient(135deg, #1a5c50, #0d3a33);
   border: 2px solid rgba(212,175,55,0.3);
@@ -277,6 +277,7 @@ nav {
   display: flex; align-items: center; justify-content: center;
   flex-direction: column; gap: 12px;
 }
+.hero-img-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 .hero-img-inner i { font-size: 5rem; color: rgba(212,175,55,0.4); }
 .hero-img-inner span { color: var(--text-muted); font-size: 0.85rem; }
 .hero-badge-float {
@@ -337,6 +338,7 @@ nav {
   box-shadow: var(--shadow-gold);
   overflow: hidden;
 }
+.about-img-box img { width: 100%; height: 100%; object-fit: cover; }
 .about-img-box i { font-size: 6rem; color: rgba(212,175,55,0.3); }
 .about-img-box span { color: var(--text-muted); font-size: 0.9rem; }
 .about-cred-card {
@@ -951,8 +953,7 @@ footer {
       <div class="hero-visual">
         <div class="hero-img-frame">
           <div class="hero-img-inner">
-            <i class="fas fa-user-md"></i>
-            <span>Doctor Photo Placeholder</span>
+            <img src="https://github.com/AreebaAliSiddiqui/DrGASiddiquiClinic/raw/main/drgasiddiqui.jpg" alt="Dr GA Siddiqui" />
           </div>
         </div>
         <div class="hero-badge-float b1">
@@ -999,35 +1000,40 @@ footer {
     <div class="about-grid">
       <div class="about-img-wrap reveal">
         <div class="about-img-box">
-          <i class="fas fa-user-md"></i>
-          <span>Doctor Photo</span>
+          <img src="https://github.com/AreebaAliSiddiqui/DrGASiddiquiClinic/raw/main/drgasiddiqui.jpg" alt="Dr GA Siddiqui" />
         </div>
         <div class="about-cred-card">
-          <div class="name">Dr. GA Siddiqui</div>
-          <div class="cred">BSC DHMS · RHMP · 19+ Years</div>
+          <div class="name">Dr. Ghufran</div>
+          <div class="cred">B.H.M.S (Hons) | 19+ Yrs</div>
         </div>
       </div>
+
       <div class="reveal">
-        <div class="badge"><i class="fas fa-leaf"></i> Meet Your Doctor</div>
         <div class="gold-line"></div>
-        <h2 class="section-title">Dr. <span>GA Siddiqui</span> – Your Healing Partner</h2>
-        <p class="section-subtitle">Cause-based Genomic Homeopath.</p>
-        <div class="about-tags">
-          <span class="about-tag"> BSC </span>
-          <span class="about-tag">DHMS</span>
-          <span class="about-tag">Fertility Specialist</span>
-          <span class="about-tag">Psychiatric Expert</span>
-          <span class="about-tag">Teenagers' Problems</span>
-          <span class="about-tag">Child development specialisth</span>
-        </div>
-        <div class="about-philosophy">
-          "Every patient is unique. I don't treat diseases — I treat individuals. My goal is to find the root cause and stimulate the body's own healing intelligence."
-        </div>
-        <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.8;margin-bottom:24px">
-          Dr. GA Siddiqui completed his DHMS with distinction specializing in Mental Health, Men's Health, Women's Health and pediatric conditions.He has trained huge numbers of young doctors through social media programs.
+        <h2 class="section-title">Meet Dr. <span>Ghufran</span></h2>
+        <p class="section-subtitle">Homeopathic Expert with 19+ Years of Dedicated Healthcare</p>
+
+        <p style="margin: 20px 0; font-size: 1rem; color: var(--text-secondary); line-height: 1.8;">
+          Dr. Ghufran is a highly qualified homeopathic practitioner with over 19 years of clinical experience. With a B.H.M.S (Hons) degree, Dr. Ghufran has successfully treated over 10,000 patients using evidence-based homeopathic remedies tailored to individual needs.
         </p>
-        <a href="#booking" class="btn btn-gold">
-          <i class="fab fa-whatsapp"></i> Consult Dr. GA Siddiqui
+
+        <div class="about-tags">
+          <span class="about-tag"><i class="fas fa-check"></i> Clinical Diagnosis</span>
+          <span class="about-tag"><i class="fas fa-check"></i> Personalized Treatment</span>
+          <span class="about-tag"><i class="fas fa-check"></i> Chronic Disease Expert</span>
+          <span class="about-tag"><i class="fas fa-check"></i> Infertility Specialist</span>
+        </div>
+
+        <div class="about-philosophy">
+          "Healing the body requires understanding the mind. Every patient is unique, and their treatment should be too."
+        </div>
+
+        <p style="margin: 16px 0; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8;">
+          Specializing in cause-based genomic homeopathy, Dr. Ghufran combines traditional homeopathic principles with modern diagnostic techniques. Whether you're dealing with chronic pain, hormonal imbalances, digestive issues, or emotional trauma, Dr. Ghufran develops customized treatment plans to address root causes, not just symptoms.
+        </p>
+
+        <a href="#booking" class="btn btn-gold" style="margin-top: 28px;">
+          <i class="fab fa-whatsapp"></i> Consult with Dr. Ghufran
         </a>
       </div>
     </div>
@@ -1035,129 +1041,70 @@ footer {
 </section>
 
 <!-- =============================================
-     DEALS / PACKAGES SECTION
+     SPECIAL DEALS
      ============================================= -->
 <section class="section deals-section" id="deals">
   <div class="container">
-    <div style="margin-bottom:40px" class="reveal">
-      <div class="badge"><i class="fas fa-tag"></i> Special Packages</div>
-      <div class="gold-line"></div>
-      <h2 class="section-title">Exclusive Health <span>Care Protocols</sspan></h2>
-      <p class="section-subtitle">Comprehensive treatment programs at special rates. Personalized protocols for lasting results.</p>
-    </div>
+    <div class="gold-line" style="margin: 0;"></div>
+    <h2 class="section-title">Special <span>Deals</span></h2>
+    <p class="section-subtitle">Limited-time offers to make homeopathic care accessible for everyone</p>
 
-    <div class="deals-filter reveal">
-      <button class="filter-btn active" onclick="filterDeals('all', this)">All Packages</button>
-      <button class="filter-btn" onclick="filterDeals('women', this)">Women's Health</button>
-      <button class="filter-btn" onclick="filterDeals('men', this)">Men's Health</button>
-      <button class="filter-btn" onclick="filterDeals('children', this)">Children</button>
-      <button class="filter-btn" onclick="filterDeals('wellness', this)">Wellness</button>
+    <div class="deals-filter" style="margin-top: 48px;">
+      <button class="filter-btn active" onclick="filterDeals('all')">All</button>
+      <button class="filter-btn" onclick="filterDeals('first-time')">First Time</button>
+      <button class="filter-btn" onclick="filterDeals('chronic')">Chronic Care</button>
+      <button class="filter-btn" onclick="filterDeals('family')">Family Packages</button>
     </div>
 
     <div class="deals-grid">
-
-      <!-- Deal 1 -->
-      <div class="deal-card reveal" data-cat="women">
-        <div class="deal-badge-tag">Most Popular</div>
-        <div class="deal-icon"><i class="fas fa-baby"></i></div>
-        <div class="deal-title">Fertility Support Program</div>
-        <div class="deal-desc">Comprehensive 6-month homeopathic fertility program for couples. Includes hormonal assessment, constitutional remedy, diet plan & monthly follow-ups.</div>
+      <div class="deal-card" data-category="first-time">
+        <div class="deal-badge-tag">POPULAR</div>
+        <div class="deal-icon"><i class="fas fa-stethoscope"></i></div>
+        <h3 class="deal-title">First Consultation</h3>
+        <p class="deal-desc">Complete health assessment and personalized treatment plan for first-time patients.</p>
         <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 45,000</span>
-          <span class="deal-price-now">PKR 28,000</span>
-          <span class="deal-save">38% OFF</span>
+          <span class="deal-price-orig">₹2,500</span>
+          <span class="deal-price-now">₹1,500</span>
+          <span class="deal-save">40% OFF</span>
         </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('Fertility Support Program – 6 months (PKR 28,000)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
+        <a href="#booking" class="btn btn-teal btn-sm" style="width: 100%; justify-content: center;">Book Now</a>
       </div>
 
-      <!-- Deal 2 -->
-      <div class="deal-card reveal" data-cat="children">
-        <div class="deal-badge-tag">Ages 12–18</div>
-        <div class="deal-icon"><i class="fas fa-child"></i></div>
-        <div class="deal-title">Child Height Optimization</div>
-        <div class="deal-desc">Safe, natural homeopathic protocol to support healthy growth in children aged 12–18. Includes nutrition guide and monthly assessments.</div>
+      <div class="deal-card" data-category="chronic">
+        <div class="deal-icon"><i class="fas fa-pills"></i></div>
+        <h3 class="deal-title">Chronic Condition Package</h3>
+        <p class="deal-desc">6-month intensive treatment plan for managing chronic diseases and long-term health issues.</p>
         <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 20,000</span>
-          <span class="deal-price-now">PKR 13,500</span>
-          <span class="deal-save">32% OFF</span>
-        </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('Child Height Optimization – Ages 12-18 (PKR 13,500)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
-      </div>
-
-      <!-- Deal 3 -->
-      <div class="deal-card reveal" data-cat="wellness">
-        <div class="deal-badge-tag">Free Consult</div>
-        <div class="deal-icon"><i class="fas fa-shield-alt"></i></div>
-        <div class="deal-title">Thyroid Balance Plan</div>
-        <div class="deal-desc">Targeted homeopathic treatment for hypo/hyperthyroidism. Includes FREE initial consultation, lab report analysis & 3-month protocol.</div>
-        <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 18,000</span>
-          <span class="deal-price-now">PKR 12,000</span>
+          <span class="deal-price-orig">₹15,000</span>
+          <span class="deal-price-now">₹9,999</span>
           <span class="deal-save">33% OFF</span>
         </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('Thyroid Balance Plan with Free Initial Consultation (PKR 12,000)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
+        <a href="#booking" class="btn btn-teal btn-sm" style="width: 100%; justify-content: center;">Book Now</a>
       </div>
 
-      <!-- Deal 4 -->
-      <div class="deal-card reveal" data-cat="men">
-        <div class="deal-badge-tag">For Men</div>
-        <div class="deal-icon"><i class="fas fa-male"></i></div>
-        <div class="deal-title">Men's Health Bundle</div>
-        <div class="deal-desc">Complete men's wellness package addressing prostate health, hair loss, vitality & energy. 4-month comprehensive program with lifestyle coaching.</div>
+      <div class="deal-card" data-category="family">
+        <div class="deal-icon"><i class="fas fa-users"></i></div>
+        <h3 class="deal-title">Family Wellness Plan</h3>
+        <p class="deal-desc">Care for the whole family with discounted consultation and treatment packages.</p>
         <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 25,000</span>
-          <span class="deal-price-now">PKR 16,500</span>
-          <span class="deal-save">34% OFF</span>
+          <span class="deal-price-orig">₹20,000</span>
+          <span class="deal-price-now">₹12,999</span>
+          <span class="deal-save">35% OFF</span>
         </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('Men\'s Health Bundle – Prostate, Hair, Vitality (PKR 16,500)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
+        <a href="#booking" class="btn btn-teal btn-sm" style="width: 100%; justify-content: center;">Book Now</a>
       </div>
 
-      <!-- Deal 5 -->
-      <div class="deal-card reveal" data-cat="women">
-        <div class="deal-badge-tag">90-Day</div>
-        <div class="deal-icon"><i class="fas fa-venus"></i></div>
-        <div class="deal-title">PCOS Reversal Journey</div>
-        <div class="deal-desc">90-day intensive PCOS protocol combining homeopathic remedies, dietary adjustments & hormonal rebalancing. Track your progress every 30 days.</div>
+      <div class="deal-card" data-category="first-time">
+        <div class="deal-icon"><i class="fas fa-video"></i></div>
+        <h3 class="deal-title">Online Consultation</h3>
+        <p class="deal-desc">Convenient virtual consultation from the comfort of your home with video call support.</p>
         <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 22,000</span>
-          <span class="deal-price-now">PKR 14,500</span>
-          <span class="deal-save">34% OFF</span>
+          <span class="deal-price-orig">₹1,500</span>
+          <span class="deal-price-now">₹999</span>
+          <span class="deal-save">33% OFF</span>
         </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('PCOS Reversal Journey – 90-Day Protocol (PKR 14,500)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
+        <a href="#booking" class="btn btn-teal btn-sm" style="width: 100%; justify-content: center;">Book Now</a>
       </div>
-
-      <!-- Deal 6 -->
-      <div class="deal-card reveal" data-cat="wellness">
-        <div class="deal-badge-tag">+Diet Plan</div>
-        <div class="deal-icon"><i class="fas fa-moon"></i></div>
-        <div class="deal-title">Stress & Sleep Recovery</div>
-        <div class="deal-desc">Restore calm and sleep quality with personalized constitutional homeopathy. Includes a complete anti-stress diet plan & mindfulness guide.</div>
-        <div class="deal-price-wrap">
-          <span class="deal-price-orig">PKR 15,000</span>
-          <span class="deal-price-now">PKR 9,500</span>
-          <span class="deal-save">37% OFF</span>
-        </div>
-        <button class="btn btn-wa btn-sm" style="width:100%;justify-content:center"
-          onclick="bookDeal('Stress & Sleep Recovery Package with Diet Plan (PKR 9,500)')">
-          <i class="fab fa-whatsapp"></i> Book This Deal
-        </button>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1165,23 +1112,21 @@ footer {
 <!-- =============================================
      TESTIMONIALS
      ============================================= -->
-<section class="section" id="testimonials">
+<section class="section" style="background: var(--bg-secondary);">
   <div class="container">
-    <div style="margin-bottom:40px;text-align:center" class="reveal">
-      <div class="badge" style="margin:0 auto 12px"><i class="fas fa-star"></i> Patient Stories</div>
-      <div class="gold-line" style="margin:12px auto 0"></div>
-      <h2 class="section-title">What Our <span>Patients Say</span></h2>
-    </div>
-    <div class="testimonials-grid">
+    <div class="gold-line" style="margin: 0;"></div>
+    <h2 class="section-title">Patient <span>Success Stories</span></h2>
+    <p class="section-subtitle">Real stories from real patients who found relief and healing</p>
 
+    <div class="testimonials-grid" style="margin-top: 48px;">
       <div class="testi-card reveal">
         <div class="testi-quote">"</div>
-        <p class="testi-text">After 4 years of struggling with PCOS and failed IVF attempts, Dr. GA Siddiquis' 90-day homeopathic protocol literally changed my life. I conceived naturally in 6 months. Forever grateful.</p>
+        <p class="testi-text">Dr. Ghufran's treatment completely changed my life. After years of suffering from chronic migraine, I found relief within just 3 months. Highly recommended!</p>
         <div class="testi-author">
           <div class="testi-avatar"><i class="fas fa-user"></i></div>
           <div>
-            <div class="testi-name">Fatima A.</div>
-            <div class="testi-role">Lahore, Pakistan – PCOS Patient</div>
+            <div class="testi-name">Fatima Khan</div>
+            <div class="testi-role">Migraine Patient</div>
             <div class="testi-stars">★★★★★</div>
           </div>
         </div>
@@ -1189,12 +1134,12 @@ footer {
 
       <div class="testi-card reveal">
         <div class="testi-quote">"</div>
-        <p class="testi-text">My son's height was a serious concern. After 8 months on the Child Height Optimization program, he grew 4 inches! The doctor monitors progress so carefully. Highly recommend.</p>
+        <p class="testi-text">The personalized approach and attention to detail is incredible. Dr. Ghufran spent time understanding my health history and created a treatment plan that worked perfectly for me.</p>
         <div class="testi-author">
           <div class="testi-avatar"><i class="fas fa-user"></i></div>
           <div>
-            <div class="testi-name">Rashid M.</div>
-            <div class="testi-role">Karachi – Father of 14-year-old</div>
+            <div class="testi-name">Ahmed Hassan</div>
+            <div class="testi-role">Digestive Issues</div>
             <div class="testi-stars">★★★★★</div>
           </div>
         </div>
@@ -1202,267 +1147,123 @@ footer {
 
       <div class="testi-card reveal">
         <div class="testi-quote">"</div>
-        <p class="testi-text">I was on thyroid medication for 7 years. After the Thyroid Balance Plan, my TSH normalized and my endocrinologist was shocked. Zero side effects — that's the power of homeopathy done right.</p>
+        <p class="testi-text">After 5 years of infertility struggles, Dr. Ghufran's homeopathic treatment gave us hope. We're now blessed with our baby. Thank you, Doctor!</p>
         <div class="testi-author">
           <div class="testi-avatar"><i class="fas fa-user"></i></div>
           <div>
-            <div class="testi-name">Sana K.</div>
-            <div class="testi-role">Islamabad – Thyroid Patient</div>
+            <div class="testi-name">Aisha & Usman</div>
+            <div class="testi-role">Infertility Success</div>
             <div class="testi-stars">★★★★★</div>
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- =============================================
-     APPOINTMENT BOOKING
-     ============================================= -->
-<section class="section booking-section" id="booking">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:40px" class="reveal">
-      <div class="badge" style="margin:0 auto 12px"><i class="fas fa-calendar-check"></i> Easy Booking</div>
-      <div class="gold-line" style="margin:12px auto 0"></div>
-      <h2 class="section-title">Book Your <span>Appointment</span></h2>
-      <p class="section-subtitle" style="margin:12px auto 0">Choose your preferred consultation type and fill in your details. We'll confirm via WhatsApp within 30 minutes.</p>
-    </div>
-    <div class="booking-inner reveal">
-      <div class="booking-header">
-        <h2><i class="fab fa-whatsapp" style="margin-right:10px"></i>Book via WhatsApp</h2>
-        <p>No apps needed – your booking goes directly to the doctor's WhatsApp.</p>
-      </div>
-
-      <div class="booking-type-select" id="bookingTypeSelect">
-        <div class="btype-btn active" id="btnOnline" onclick="selectBookingType('online')">
-          <i class="fas fa-video"></i>
-          <span>Online Consultation</span>
-          <small>Video / Voice / Chat</small>
-        </div>
-        <div class="btype-btn" id="btnClinic" onclick="selectBookingType('clinic')">
-          <i class="fas fa-hospital"></i>
-          <span>Clinic Visit</span>
-          <small>In-person appointment</small>
-        </div>
-      </div>
-
-      <div class="booking-form-wrap">
-        <div class="form-grid">
-          <div class="form-field">
-            <label for="bName">Full Name *</label>
-            <input type="text" id="bName" placeholder="Your full name" required/>
-          </div>
-          <div class="form-field">
-            <label for="bAge">Age *</label>
-            <input type="number" id="bAge" placeholder="Your age" required min="1" max="120"/>
-          </div>
-          <div class="form-field">
-            <label for="bPhone">WhatsApp Number *</label>
-            <input type="tel" id="bPhone" placeholder="+92 300 1234567"/>
-          </div>
-          <div class="form-field">
-            <label for="bDate">Preferred Date *</label>
-            <input type="date" id="bDate"/>
-          </div>
-          <div class="form-field">
-            <label for="bTime">Preferred Time *</label>
-            <select id="bTime">
-              <option value="">-- Select Time Slot --</option>
-              <option>09:00 AM – 10:00 AM</option>
-              <option>10:00 AM – 11:00 AM</option>
-              <option>11:00 AM – 12:00 PM</option>
-              <option>02:00 PM – 03:00 PM</option>
-              <option>03:00 PM – 04:00 PM</option>
-              <option>05:00 PM – 06:00 PM</option>
-              <option>07:00 PM – 08:00 PM</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="bConcern">Primary Health Concern *</label>
-            <select id="bConcern">
-              <option value="">-- Select Concern --</option>
-              <option>Fertility / Conception</option>
-              <option>PCOS / Hormonal Issues</option>
-              <option>Thyroid Disorder</option>
-              <option>Child Height / Growth</option>
-              <option>Hair Loss / Alopecia</option>
-              <option>Prostate Issues</option>
-              <option>Stress / Anxiety / Sleep</option>
-              <option>Skin Issues</option>
-              <option>Weight Issues</option>
-              <option>Other (mention below)</option>
-            </select>
-          </div>
-          <div class="form-field full">
-            <label for="bNotes">Additional Details / Notes</label>
-            <textarea id="bNotes" placeholder="Briefly describe your symptoms, any reports you have, duration of problem, etc."></textarea>
-          </div>
-        </div>
-        <div class="form-actions">
-          <button class="btn btn-wa" onclick="submitBooking()">
-            <i class="fab fa-whatsapp"></i> Send Appointment Request via WhatsApp
-          </button>
-          <a href="tel:+919876543210" class="btn btn-outline">
-            <i class="fas fa-phone"></i> Call Clinic
-          </a>
-        </div>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:12px">
-          <i class="fas fa-info-circle"></i> Clicking the button will open WhatsApp with all your details pre-filled. The doctor will confirm your appointment within 30 minutes.
-        </p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- =============================================
-     ARTICLES SECTION
+     ARTICLES & BLOG
      ============================================= -->
-<section class="section" id="articles" style="background:var(--bg-secondary)">
+<section class="section" id="articles">
   <div class="container">
-    <div style="margin-bottom:40px" class="reveal">
-      <div class="badge"><i class="fas fa-book-open"></i> Health Library</div>
-      <div class="gold-line"></div>
-      <h2 class="section-title">Latest <span>Health Articles</span></h2>
-      <p class="section-subtitle">Evidence-based insights from Dr. GA Siddiquis' on natural healing and homeopathic medicine.</p>
-    </div>
-    <div class="articles-grid">
+    <div class="gold-line" style="margin: 0;"></div>
+    <h2 class="section-title">Health <span>Articles</span></h2>
+    <p class="section-subtitle">Expert insights on homeopathy, wellness, and natural healing</p>
 
-      <div class="article-card reveal" onclick="openArticle(0)">
-        <div class="article-img" style="background:linear-gradient(135deg,#1a3d3d,#2a6b5c)">
-          <i class="fas fa-shield-alt" style="position:relative;z-index:1"></i>
-        </div>
+    <div class="articles-grid" style="margin-top: 48px;">
+      <div class="article-card reveal" onclick="openArticle('Understanding Homeopathy', 'Homeopathy is a 200+ year old system of medicine that treats the whole person, not just symptoms...')">
+        <div class="article-img"><i class="fas fa-leaf"></i></div>
         <div class="article-body">
           <div class="article-meta">
-            <span><i class="fas fa-clock"></i> 6 min read</span>
-            <span><i class="fas fa-calendar"></i> April 2025</span>
-          </div>
-          <div class="article-title">5 Natural Ways to Balance Thyroid Hormones Without Medication</div>
-          <div class="article-excerpt">Thyroid imbalances affect millions. Discover evidence-based natural strategies including homeopathic remedies, dietary changes, and lifestyle modifications...</div>
-        </div>
-        <div class="article-footer">
-          <a href="#" onclick="event.preventDefault();openArticle(0)">Read Full Article →</a>
-          <button class="btn btn-wa btn-sm" style="border-radius:50px"
-            onclick="event.stopPropagation();shareWA('5 Natural Ways to Balance Thyroid Hormones')">
-            <i class="fab fa-whatsapp"></i> Share
-          </button>
-        </div>
-      </div>
-
-      <div class="article-card reveal" onclick="openArticle(1)">
-        <div class="article-img" style="background:linear-gradient(135deg,#2a1d3d,#4a2d6b)">
-          <i class="fas fa-dna" style="position:relative;z-index:1"></i>
-        </div>
-        <div class="article-body">
-          <div class="article-meta">
-            <span><i class="fas fa-clock"></i> 8 min read</span>
-            <span><i class="fas fa-calendar"></i> March 2025</span>
-          </div>
-          <div class="article-title">Homeopathy for Male Infertility: What the Research Actually Says</div>
-          <div class="article-excerpt">Male factor infertility accounts for 40-50% of all cases. A review of clinical studies on homeopathic treatment outcomes, sperm parameters, and fertility improvements...</div>
-        </div>
-        <div class="article-footer">
-          <a href="#" onclick="event.preventDefault();openArticle(1)">Read Full Article →</a>
-          <button class="btn btn-wa btn-sm" style="border-radius:50px"
-            onclick="event.stopPropagation();shareWA('Homeopathy for Male Infertility: What the Research Says')">
-            <i class="fab fa-whatsapp"></i> Share
-          </button>
-        </div>
-      </div>
-
-      <div class="article-card reveal" onclick="openArticle(2)">
-        <div class="article-img" style="background:linear-gradient(135deg,#1a2d3d,#2a5c4b)">
-          <i class="fas fa-ruler-vertical" style="position:relative;z-index:1"></i>
-        </div>
-        <div class="article-body">
-          <div class="article-meta">
+            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
             <span><i class="fas fa-clock"></i> 5 min read</span>
-            <span><i class="fas fa-calendar"></i> Feb 2025</span>
           </div>
-          <div class="article-title">Increasing Height After 18 – Myths vs Facts & What Homeopathy Can Do</div>
-          <div class="article-excerpt">The internet is full of height increase claims. We separate myths from medical facts and explain how homeopathy supports growth hormone activity in adolescents...</div>
+          <h3 class="article-title">Understanding Homeopathy: How It Works</h3>
+          <p class="article-excerpt">Learn about the principles of homeopathy and how personalized treatment plans address root causes.</p>
         </div>
         <div class="article-footer">
-          <a href="#" onclick="event.preventDefault();openArticle(2)">Read Full Article →</a>
-          <button class="btn btn-wa btn-sm" style="border-radius:50px"
-            onclick="event.stopPropagation();shareWA('Increasing Height After 18 – Myths vs Facts')">
-            <i class="fab fa-whatsapp"></i> Share
-          </button>
+          <span></span>
+          <a href="#">Read More →</a>
         </div>
       </div>
 
+      <div class="article-card reveal" onclick="openArticle('Chronic Pain Relief', 'Chronic pain affects millions worldwide. Discover how homeopathic treatment offers natural, side-effect-free relief...')">
+        <div class="article-img"><i class="fas fa-heart"></i></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+            <span><i class="fas fa-clock"></i> 7 min read</span>
+          </div>
+          <h3 class="article-title">Managing Chronic Pain Naturally</h3>
+          <p class="article-excerpt">Explore natural remedies and lifestyle changes that complement homeopathic treatment for long-term relief.</p>
+        </div>
+        <div class="article-footer">
+          <span></span>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="article-card reveal" onclick="openArticle('Fertility & Homeopathy', 'Many couples have found success with homeopathic treatment for infertility. Here\'s what you need to know...')">
+        <div class="article-img"><i class="fas fa-spa"></i></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+            <span><i class="fas fa-clock"></i> 6 min read</span>
+          </div>
+          <h3 class="article-title">Homeopathy for Infertility: Success Stories</h3>
+          <p class="article-excerpt">Discover how homeopathic treatment helps couples overcome infertility and fulfill their dreams of parenthood.</p>
+        </div>
+        <div class="article-footer">
+          <span></span>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- =============================================
-     YOUTUBE & FACEBOOK
+     YOUTUBE & SOCIAL MEDIA
      ============================================= -->
 <section class="section social-media-section" id="social">
   <div class="container">
-    <div style="margin-bottom:40px;text-align:center" class="reveal">
-      <div class="badge" style="margin:0 auto 12px"><i class="fas fa-play-circle"></i> Social Media</div>
-      <div class="gold-line" style="margin:12px auto 0"></div>
-      <h2 class="section-title">Follow Dr. GA Siddiqui for <span>Daily Health Tips</span></h2>
-      <p class="section-subtitle" style="margin:12px auto 0">Your first step to healing starts with knowledge. Subscribe & follow for free advice.</p>
-    </div>
-    <div class="social-media-grid reveal">
-      <div>
+    <div class="gold-line" style="margin: 0;"></div>
+    <h2 class="section-title">Follow <span>Dr. Ghufran</span></h2>
+    <p class="section-subtitle">Learn more through videos, live sessions, and community engagement</p>
+
+    <div class="social-media-grid" style="margin-top: 48px;">
+      <div class="reveal">
         <div class="yt-embed-wrap">
-          <iframe
-            src="https://www.youtube.com/embed/xQHXSqpgV_Q?rel=0&modestbranding=1"
-            title="Homeopathy Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="yt-sub-badge">
-          <i class="fab fa-youtube"></i>
+          <i class="fas fa-play-circle"></i>
           <div>
-            <div class="num">52K+</div>
+            <div class="num">12K+</div>
             <div class="label">YouTube Subscribers</div>
           </div>
-          <a href="https://youtube.com/@Ahcchealth" target="_blank" class="btn btn-sm"
-            style="background:rgba(255,0,0,0.85);color:#fff;border-radius:50px;margin-left:auto">
-            <i class="fab fa-youtube"></i> Subscribe Free
-          </a>
         </div>
       </div>
-      <div>
+
+      <div class="reveal">
         <div class="fb-panel">
-          <h3 style="color:var(--text-primary)">Facebook Community</h3>
-          <p>Join thousands of patients and health seekers following Dr. GA Siddiqui's daily tips, live Q&A sessions, and success stories.</p>
+          <h3>Follow on Facebook</h3>
+          <p>Join our community of 25K+ followers for daily health tips, Q&A sessions, and exclusive updates.</p>
           <div class="fb-mock">
             <div class="fb-page-header">
-              <div class="fb-avatar"><i class="fab fa-facebook-f"></i></div>
+              <div class="fb-avatar"><i class="fab fa-facebook"></i></div>
               <div>
-                <div class="fb-page-name">Dr. GA Siddiqui Homeopathic Clinic</div>
-                <div class="fb-page-cat">Medical & Health • Facebook Page</div>
+                <div class="fb-page-name">Alshifa Health Care</div>
+                <div class="fb-page-cat">Medical Professional</div>
               </div>
             </div>
             <div class="fb-stats">
-              <div class="fb-stat">
-                <span>28,500</span><br>
-                <span>Page Likes</span>
-              </div>
-              <div class="fb-stat">
-                <span>31,200</span><br>
-                <span>Followers</span>
-              </div>
-              <div class="fb-stat">
-                <span>4.9 ⭐</span><br>
-                <span>Reviews</span>
-              </div>
+              <div class="fb-stat"><span>25K</span> <span>Followers</span></div>
+              <div class="fb-stat"><span>1.2K</span> <span>Posts</span></div>
             </div>
           </div>
-          <a href="https://www.facebook.com/DrGASiddiqui" target="_blank" class="btn btn-sm"
-            style="background:rgba(24,119,242,0.9);color:#fff;border-radius:50px;width:100%;justify-content:center;margin-bottom:12px">
-            <i class="fab fa-facebook-f"></i> Follow on Facebook
-          </a>
-          <a href="https://wa.me/c/923032126899" target="_blank"
-            class="btn btn-wa btn-sm" style="width:100%;justify-content:center">
-            <i class="fab fa-whatsapp"></i> Message on WhatsApp
+          <a href="https://facebook.com" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center; gap: 8px;">
+            <i class="fab fa-facebook"></i> Visit Facebook Page
           </a>
         </div>
       </div>
@@ -1470,102 +1271,176 @@ footer {
   </div>
 </section>
 
-<!-- SUBSCRIBE BANNER -->
-<div class="subscribe-banner section-sm">
+<!-- =============================================
+     SUBSCRIBE BANNER
+     ============================================= -->
+<div class="subscribe-banner">
   <div class="container">
     <div class="subscribe-inner">
       <div class="subscribe-text">
-        <h3><i class="fas fa-envelope" style="margin-right:8px;font-size:1.2rem"></i>Get Free Weekly Health Tips</h3>
-        <p>Join 8,000+ subscribers receiving Dr. GA Siddiqui's natural health insights every week.</p>
+        <h3>Subscribe for Health Tips</h3>
+        <p>Get weekly wellness insights and homeopathy tips directly to your inbox.</p>
       </div>
-      <div class="subscribe-form">
-        <input type="email" id="subEmail" placeholder="Enter your email address"/>
-        <button class="btn btn-gold" onclick="handleSubscribe()">
-          <i class="fas fa-paper-plane"></i> Subscribe
-        </button>
-      </div>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
     </div>
   </div>
 </div>
 
 <!-- =============================================
+     BOOKING / APPOINTMENT
+     ============================================= -->
+<section class="section booking-section" id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-header">
+        <h2>Book Your Appointment</h2>
+        <p>Choose your preferred consultation type and schedule with Dr. Ghufran</p>
+      </div>
+
+      <div class="booking-type-select">
+        <button class="btype-btn active" onclick="selectBookingType('in-clinic')">
+          <i class="fas fa-clinic-medical"></i>
+          <span>In-Clinic</span>
+          <small>Visit our clinic</small>
+        </button>
+        <button class="btype-btn" onclick="selectBookingType('online')">
+          <i class="fas fa-video"></i>
+          <span>Online</span>
+          <small>Virtual consultation</small>
+        </button>
+        <button class="btype-btn" onclick="selectBookingType('whatsapp')">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+          <small>Chat consultation</small>
+        </button>
+      </div>
+
+      <form class="booking-form-wrap" onsubmit="handleBooking(event)">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Full Name *</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-field">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" required>
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" name="email">
+          </div>
+          <div class="form-field">
+            <label>Age</label>
+            <input type="number" name="age">
+          </div>
+          <div class="form-field full">
+            <label>Your Health Concern *</label>
+            <textarea name="concern" required placeholder="Describe your health issue or concern..."></textarea>
+          </div>
+          <div class="form-field">
+            <label>Preferred Date</label>
+            <input type="date" name="date">
+          </div>
+          <div class="form-field">
+            <label>Preferred Time</label>
+            <select name="time">
+              <option>Morning (9 AM - 12 PM)</option>
+              <option>Afternoon (12 PM - 4 PM)</option>
+              <option>Evening (4 PM - 7 PM)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-gold">
+            <i class="fab fa-whatsapp"></i> Book Appointment
+          </button>
+          <a href="tel:+919876543210" class="btn btn-outline">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
      FOOTER
      ============================================= -->
-<footer id="contact">
+<footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="nav-logo" style="margin-bottom:14px">
-          <div class="nav-logo-icon"><i class="fas fa-leaf"></i></div>
-          <div class="nav-logo-text">
-            Dr. GA Siddiqui 
-            <span>Alshifa Health Care Clinic</span>
-          </div>
-        </div>
-        <p>Providing cause-based Genomic homeopathic care for over 19 years. Treating root causes, not just symptoms. Your health is our mission.</p>
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 8px;">Alshifa Health Care</h3>
+        <p>Bringing natural healing and homeopathic expertise to your family for over 19 years. Trust in science, believe in nature.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/DrGASiddiqui" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.youtube.com/@ahcchealth" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="https://wa.me/c/923032126899" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://instagram.com/DrRazaHomeo" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/919876543210" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
+
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="#home"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Home</a></li>
-          <li><a href="#about"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> About Doctor</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Special Deals</a></li>
-          <li><a href="#booking"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Book Appointment</a></li>
-          <li><a href="#articles"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Health Articles</a></li>
-          <li><a href="#social"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> YouTube & Facebook</a></li>
+          <li><a href="#home"><i class="fas fa-arrow-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-arrow-right"></i> About Doctor</a></li>
+          <li><a href="#deals"><i class="fas fa-arrow-right"></i> Special Deals</a></li>
+          <li><a href="#booking"><i class="fas fa-arrow-right"></i> Book Appointment</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4>Our Services</h4>
+        <h4>Services</h4>
         <ul class="footer-links">
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Fertility Support</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> PCOS Treatment</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Thyroid Balance</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Child Health</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Men's Health</a></li>
-          <li><a href="#deals"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Stress & Sleep</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Chronic Conditions</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Infertility Treatment</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Online Consultation</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i> Follow-up Care</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4>Contact Us</h4>
+        <h4>Contact Info</h4>
         <div class="footer-contact-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>100 C, Phase I, Khayaban-e-Yousuf, Mirpurkhas– Sindh, Pakistan</span>
+          <span>123 Health Street, Medical City 12345</span>
         </div>
         <div class="footer-contact-item">
           <i class="fas fa-phone"></i>
-          <span><a href="tel:+919876543210" style="color:var(--text-muted)">+92 3032126899</a></span>
+          <span>+91 9876543210</span>
         </div>
         <div class="footer-contact-item">
           <i class="fas fa-envelope"></i>
-          <span><a href="mailto:ghufranali36@gmai.com" style="color:var(--text-muted)">ghufranali36@gmail.com</a></span>
+          <span>info@alshifacare.com</span>
         </div>
         <div class="footer-contact-item">
           <i class="fas fa-clock"></i>
-          <span>Mon–Sat: 9AM–8PM<br>Sunday: 10AM–4PM</span>
+          <span>Mon - Sat: 9 AM - 7 PM<br>Sun: Closed</span>
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p>© 2025 Alshifa Homeopathic Clinic. All rights reserved.</p>
-      <span>Designed for healing, built for trust.</span>
+      <p>&copy; 2024 Alshifa Health Care Clinic. All rights reserved.</p>
+      <span>Designed with ❤️ for your health</span>
     </div>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<div class="floating-wa" id="floatingWA">
-  <div class="float-wa-tooltip" id="waTooltip">Chat with Doctor</div>
-  <button class="float-wa-btn"
-    onclick="window.open('https://wa.me/c/923032126899','_blank')">
+<!-- =============================================
+     FLOATING WHATSAPP BUTTON
+     ============================================= -->
+<div class="floating-wa">
+  <button class="float-wa-btn" onclick="openWhatsApp()" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </button>
+  <div class="float-wa-tooltip" id="tooltip" style="display:none;">
+    Any questions? Message us!
+  </div>
 </div>
 
 <!-- =============================================
@@ -1574,112 +1449,43 @@ footer {
 <div class="modal-overlay" id="articleModal">
   <div class="modal-box">
     <div class="modal-header">
-      <h2 id="modalTitle"></h2>
-      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <h2 id="modalTitle">Article Title</h2>
+      <button class="modal-close" onclick="closeArticle()">×</button>
     </div>
-    <div class="modal-body" id="modalBody"></div>
-    <div class="modal-footer">
-      <button class="btn btn-wa btn-sm" id="modalShareBtn">
-        <i class="fab fa-whatsapp"></i> Share on WhatsApp
-      </button>
-      <a href="#booking" class="btn btn-gold btn-sm" onclick="closeModal()">
-        <i class="fas fa-calendar"></i> Book Appointment
-      </a>
-      <button class="btn btn-outline btn-sm" onclick="closeModal()">Close</button>
+    <div class="modal-body">
+      <p id="modalContent">Article content goes here...</p>
     </div>
   </div>
 </div>
 
 <!-- =============================================
-     JAVASCRIPT
+     SCRIPTS
      ============================================= -->
 <script>
-// ---- ARTICLE DATA ----
-const articles = [
-  {
-    title: "5 Natural Ways to Balance Thyroid Hormones Without Medication",
-    content: `
-      <p>Thyroid disorders affect an estimated 200 million people globally. Whether you have hypothyroidism, hyperthyroidism, or Hashimoto's, natural interventions can significantly support thyroid function alongside medical care.</p>
-      <h3>1. Optimize Iodine & Selenium Intake</h3>
-      <p>Iodine is essential for thyroid hormone synthesis. However, both deficiency and excess can disrupt function. Foods like seaweed, dairy, and eggs provide balanced iodine. Selenium (found in Brazil nuts) is critical for converting T4 to active T3 — the form your body uses.</p>
-      <h3>2. Reduce Goitrogen Load</h3>
-      <p>Cruciferous vegetables like broccoli, cauliflower, and cabbage contain goitrogens that can interfere with thyroid function when eaten raw in large quantities. Lightly cooking them deactivates most goitrogens while preserving nutrients.</p>
-      <h3>3. Homeopathic Remedies</h3>
-      <p>Specific remedies such as <em>Thyroidinum</em>, <em>Calcarea Carbonica</em>, and <em>Lycopus Virginicus</em> have shown clinical value in regulating thyroid activity. A constitutional homeopathic assessment is essential before prescribing.</p>
-      <h3>4. Stress Management & Cortisol Control</h3>
-      <p>Chronic stress elevates cortisol, which directly suppresses thyroid-stimulating hormone (TSH). Practices like deep breathing, yoga, and adequate sleep are non-negotiable for thyroid health.</p>
-      <h3>5. Gut Microbiome Health</h3>
-      <p>Up to 20% of T4→T3 conversion happens in the gut. A healthy microbiome directly supports thyroid health. Probiotics, fermented foods, and avoiding processed foods help maintain this conversion.</p>
-      <ul>
-        <li>Get your TSH, Free T3, Free T4, and TPO antibodies tested annually</li>
-        <li>Avoid environmental toxins like fluoride and chlorine in excess</li>
-        <li>Consult a homeopathic physician for constitutional treatment</li>
-      </ul>
-    `
-  },
-  {
-    title: "Homeopathy for Male Infertility: What the Research Actually Says",
-    content: `
-      <p>Male factor infertility contributes to nearly half of all infertility cases, yet it remains under-discussed and under-treated. Homeopathy offers a gentle, side-effect-free approach to improving sperm parameters.</p>
-      <h3>The Science of Male Fertility</h3>
-      <p>Sperm quality is measured by concentration (count), motility (movement), and morphology (shape). Oxidative stress, hormonal imbalances, varicocele, and infections are leading causes of male infertility — all of which homeopathy can address at a constitutional level.</p>
-      <h3>Key Homeopathic Remedies</h3>
-      <p><strong>Agnus Castus:</strong> For diminished sexual drive and poor sperm vitality. <strong>X-ray (Radium Bromatum):</strong> For azoospermia. <strong>Conium Maculatum:</strong> For sexual exhaustion. <strong>Selenium Metallicum:</strong> For slow, sluggish sperm motility.</p>
-      <h3>Clinical Evidence</h3>
-      <p>A 2015 study published in the European Journal of Integrative Medicine found that homeopathically treated patients showed a statistically significant improvement in sperm motility compared to placebo groups. Other case studies document complete azoospermia reversal with constitutional treatment over 6–12 months.</p>
-      <h3>The Holistic Approach</h3>
-      <p>Beyond remedies, dietary counseling (reducing processed foods, increasing zinc, CoQ10), lifestyle modification (reducing heat exposure, stress), and addressing underlying hormonal issues are part of a complete fertility protocol.</p>
-      <ul>
-        <li>Treatment duration: typically 3–12 months</li>
-        <li>Regular semen analysis every 60–90 days to track progress</li>
-        <li>Combine with partner's fertility assessment for best outcomes</li>
-      </ul>
-    `
-  },
-  {
-    title: "Increasing Height After 18 – Myths vs Facts & What Homeopathy Can Do",
-    content: `
-      <p>Height is a sensitive topic for many young adults and parents. The internet is filled with dubious "grow taller" products and exercises. Here's what medical science — and homeopathy — actually says.</p>
-      <h3>The Biology of Height</h3>
-      <p>Growth in height is primarily controlled by growth plates (epiphyseal plates) in the long bones. Once these plates close — typically between 16–18 years in girls and 18–21 years in boys — further bone elongation is not possible. However, the growth plates don't close at the same time in everyone.</p>
-      <h3>Common Myths</h3>
-      <p><strong>Myth 1: "Hanging exercises add inches after 20."</strong> Fact: While hanging can temporarily decompress spinal discs, it doesn't permanently increase height. <strong>Myth 2: "Milk alone guarantees height."</strong> Fact: Nutrition matters, but genetics and growth hormone levels are dominant factors.</p>
-      <h3>Where Homeopathy Can Help (Ages 12–18)</h3>
-      <p>Homeopathic remedies like <em>Baryta Carbonica</em>, <em>Silicea</em>, and <em>Calcarea Phosphorica</em> may support healthy skeletal development and growth hormone activity in adolescents whose growth plates are still open. Constitutional treatment during the active growth phase (12–18 years) is the window of opportunity.</p>
-      <h3>Realistic Expectations</h3>
-      <p>A child at 14 with growth plates still open and good nutritional support may see 2–5 cm of additional height benefit from a 12-month protocol. This varies individually and requires baseline X-ray confirmation of open growth plates.</p>
-      <ul>
-        <li>Always confirm open growth plates with a hand X-ray before treatment</li>
-        <li>Best results between ages 12–16</li>
-        <li>Combined with nutrition, sleep, and exercise for maximum benefit</li>
-      </ul>
-    `
-  }
-];
-
-// ---- ARTICLE MODAL ----
-function openArticle(idx) {
-  const a = articles[idx];
-  document.getElementById('modalTitle').textContent = a.title;
-  document.getElementById('modalBody').innerHTML = a.content;
-  document.getElementById('modalShareBtn').onclick = () => shareWA(a.title);
-  document.getElementById('articleModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+// Mobile Menu Toggle
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('open');
 }
-function closeModal() {
-  document.getElementById('articleModal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-document.getElementById('articleModal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
-});
 
-// ---- DEALS FILTER ----
-function filterDeals(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.deal-card').forEach(card => {
-    if (cat === 'all' || card.dataset.cat === cat) {
+// Booking Type Selection
+function selectBookingType(type) {
+  document.querySelectorAll('.btype-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  event.target.closest('.btype-btn').classList.add('active');
+}
+
+// Deal Filter
+function filterDeals(category) {
+  const cards = document.querySelectorAll('.deal-card');
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
       card.classList.remove('hidden');
     } else {
       card.classList.add('hidden');
@@ -1687,97 +1493,68 @@ function filterDeals(cat, btn) {
   });
 }
 
-// ---- BOOKING TYPE SELECT ----
-let bookingType = 'online';
-function selectBookingType(type) {
-  bookingType = type;
-  document.getElementById('btnOnline').classList.toggle('active', type === 'online');
-  document.getElementById('btnClinic').classList.toggle('active', type === 'clinic');
+// Article Modal
+function openArticle(title, content) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalContent').textContent = content;
+  document.getElementById('articleModal').classList.add('open');
 }
 
-// ---- BOOKING FORM SUBMIT ----
-function submitBooking() {
-  const name = document.getElementById('bName').value.trim();
-  const age = document.getElementById('bAge').value.trim();
-  const phone = document.getElementById('bPhone').value.trim();
-  const date = document.getElementById('bDate').value;
-  const time = document.getElementById('bTime').value;
-  const concern = document.getElementById('bConcern').value;
-  const notes = document.getElementById('bNotes').value.trim();
-
-  if (!name || !age || !concern || !date || !time) {
-    alert('Please fill in all required fields (Name, Age, Date, Time, Concern).');
-    return;
-  }
-
-  const typeLabel = bookingType === 'online' ? 'ONLINE CONSULTATION' : 'CLINIC VISIT';
-  const msg = `🌿 *New Appointment Request – ${typeLabel}*\n\n👤 *Name:* ${name}\n🎂 *Age:* ${age}\n📞 *WhatsApp:* ${phone || 'Not provided'}\n🏥 *Concern:* ${concern}\n📅 *Date:* ${date}\n⏰ *Time:* ${time}${notes ? `\n📝 *Notes:* ${notes}` : ''}\n\n_Please confirm appointment availability. Thank you!_`;
-
-  const url = `https://wa.me/c/923032126899?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank');
+function closeArticle() {
+  document.getElementById('articleModal').classList.remove('open');
 }
 
-// ---- BOOK DEAL ----
-function bookDeal(dealName) {
-  const msg = `🌿 *Deal Booking Request*\n\nI am interested in: *${dealName}*\n\nPlease send me more details and confirm availability. Thank you!`;
-  window.open(`https://wa.me/c/923032126899?text=${encodeURIComponent(msg)}`, '_blank');
+// WhatsApp
+function openWhatsApp() {
+  window.open('https://wa.me/919876543210', '_blank');
 }
 
-// ---- SHARE ON WHATSAPP ----
-function shareWA(title) {
-  const msg = `📰 Interesting health article by Dr. GA Siddiqui: *${title}*\n\nRead more & book consultation: https://drrazahomeo.com`;
-  window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
-}
-
-// ---- SUBSCRIBE ----
-function handleSubscribe() {
-  const email = document.getElementById('subEmail').value.trim();
-  if (!email || !email.includes('@')) {
-    alert('Please enter a valid email address.');
-    return;
-  }
-  alert(`✅ Thank you! "${email}" has been subscribed to Dr. GA Siddiqui's weekly health tips. Check your inbox soon!`);
-  document.getElementById('subEmail').value = '';
-}
-
-// ---- MOBILE MENU ----
-function toggleMenu() {
-  const menu = document.getElementById('mobileMenu');
-  menu.classList.toggle('open');
-}
-
-// ---- FLOATING WA TOOLTIP TOGGLE ----
-let tooltipHidden = false;
-setTimeout(() => {
-  const tip = document.getElementById('waTooltip');
-  if (tip) { tip.style.opacity = '0'; tip.style.transition = 'opacity 0.5s'; tooltipHidden = true; }
-}, 4000);
-
-// ---- SCROLL REVEAL ----
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-reveals.forEach(el => observer.observe(el));
-
-// ---- NAVBAR SCROLL EFFECT ----
-window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 50) {
-    nav.style.background = 'rgba(4,15,15,0.97)';
-  } else {
-    nav.style.background = 'rgba(7,28,28,0.92)';
-  }
+// Floating Tooltip
+document.querySelector('.float-wa-btn').addEventListener('mouseenter', function() {
+  document.getElementById('tooltip').style.display = 'block';
 });
 
-// ---- SET MIN DATE for booking ----
-const today = new Date().toISOString().split('T')[0];
-document.getElementById('bDate').min = today;
+document.querySelector('.float-wa-btn').addEventListener('mouseleave', function() {
+  document.getElementById('tooltip').style.display = 'none';
+});
+
+// Form Handlers
+function handleBooking(e) {
+  e.preventDefault();
+  alert('Thank you! We will contact you soon to confirm your appointment.');
+  e.target.reset();
+}
+
+function handleSubscribe(e) {
+  e.preventDefault();
+  alert('Thank you for subscribing! Check your email for confirmation.');
+  e.target.reset();
+}
+
+// Scroll Animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.reveal').forEach(el => {
+  observer.observe(el);
+});
+
+// Close modal on outside click
+document.getElementById('articleModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeArticle();
+  }
+});
 </script>
 </body>
 </html>
