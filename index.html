@@ -895,7 +895,7 @@ footer {
   <a href="#social" onclick="toggleMenu()">Videos</a>
   <a href="#booking" onclick="toggleMenu()">Book Appointment</a>
   <a href="#contact" onclick="toggleMenu()">Contact</a>
-  <a href="https://wa.me/919876543210" target="_blank" class="btn btn-wa" style="margin-top:16px;justify-content:center">
+  <a href="https://wa.me/c/923032126899" target="_blank" class="btn btn-wa" style="margin-top:16px;justify-content:center">
     <i class="fab fa-whatsapp"></i> WhatsApp Chat
   </a>
 </div>
@@ -1460,7 +1460,7 @@ footer {
             style="background:rgba(24,119,242,0.9);color:#fff;border-radius:50px;width:100%;justify-content:center;margin-bottom:12px">
             <i class="fab fa-facebook-f"></i> Follow on Facebook
           </a>
-          <a href="https://wa.me/919876543210?text=Hi%20Dr.%20Raza!%20I%20saw%20your%20video%20and%20want%20a%20consultation." target="_blank"
+          <a href="https://wa.me/c/923032126899" target="_blank"
             class="btn btn-wa btn-sm" style="width:100%;justify-content:center">
             <i class="fab fa-whatsapp"></i> Message on WhatsApp
           </a>
@@ -1506,7 +1506,7 @@ footer {
         <div class="footer-social">
           <a href="https://www.facebook.com/DrGASiddiqui" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.youtube.com/@ahcchealth" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="https://wa.me/919876543210" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/c/923032126899" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
           <a href="https://instagram.com/DrRazaHomeo" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
@@ -1563,7 +1563,7 @@ footer {
 <div class="floating-wa" id="floatingWA">
   <div class="float-wa-tooltip" id="waTooltip">Chat with Doctor</div>
   <button class="float-wa-btn"
-    onclick="window.open('https://wa.me/919876543210?text=Hi%20Doctor!%20I%20want%20to%20inquire%20about%20a%20consultation.','_blank')">
+    onclick="window.open('https://wa.me/c/923032126899','_blank')">
     <i class="fab fa-whatsapp"></i>
   </button>
 </div>
@@ -1713,14 +1713,14 @@ function submitBooking() {
   const typeLabel = bookingType === 'online' ? 'ONLINE CONSULTATION' : 'CLINIC VISIT';
   const msg = `🌿 *New Appointment Request – ${typeLabel}*\n\n👤 *Name:* ${name}\n🎂 *Age:* ${age}\n📞 *WhatsApp:* ${phone || 'Not provided'}\n🏥 *Concern:* ${concern}\n📅 *Date:* ${date}\n⏰ *Time:* ${time}${notes ? `\n📝 *Notes:* ${notes}` : ''}\n\n_Please confirm appointment availability. Thank you!_`;
 
-  const url = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+  const url = `https://wa.me/c/923032126899?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
 
 // ---- BOOK DEAL ----
 function bookDeal(dealName) {
   const msg = `🌿 *Deal Booking Request*\n\nI am interested in: *${dealName}*\n\nPlease send me more details and confirm availability. Thank you!`;
-  window.open(`https://wa.me/919876543210?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/c/923032126899?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // ---- SHARE ON WHATSAPP ----
