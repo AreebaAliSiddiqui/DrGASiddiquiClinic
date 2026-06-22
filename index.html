@@ -1593,6 +1593,48 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 handleScroll(); // Check on page load
+
+  document.getElementById('booking-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    // Collect form data
+    const formData = new FormData(this);
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'), // Must be EasyPaisa registered number
+      date: formData.get('date'),
+      timeSlot: formData.get('timeSlot'),
+      depositAmount: 500
+    };
+
+    try {
+      const res = await fetch('/api/create-booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      
+      if (result.orderId) {
+        alert('Payment request sent to your EasyPaisa app. Please approve it.');
+        // Start polling
+        const interval = setInterval(async () => {
+          const statusRes = await fetch(`/api/booking-status?orderId=${result.orderId}`);
+          const status = await statusRes.json();
+          if (status.status === 'paid') {
+            clearInterval(interval);
+            alert('✅ Booking confirmed! Check your email.');
+            window.location.href = '/thank-you.html';
+          } else if (status.status === 'failed') {
+            clearInterval(interval);
+            alert('❌ Payment failed. Please try again.');
+          }
+        }, 3000);
+      }
+    } catch (err) {
+      alert('Something went wrong. Please try again.');
+    }
+  });
+
 </script>
 
 </body>
